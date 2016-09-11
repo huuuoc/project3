@@ -24,6 +24,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"/>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -32,34 +33,62 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<?php if ( get_header_image() ) : ?>
+	<!--<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 		</a>
 	</div>
-	<?php endif; ?>
+	<?php endif; ?>-->
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="header-main">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
-			<div class="search-toggle">
-				<a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
+		<div class="header-top">
+			<div class="header-left">
+				<?php if (is_front_page() && is_home() ): ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Nấm lim xanh" />
+					</a></h1>
+				<?php else :?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Nấm lim xanh" /></a></p>
+				<?php endif?>
 			</div>
-
-			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav>
-		</div>
-
-		<div id="search-container" class="search-box-wrapper hide">
-			<div class="search-box">
-				<?php get_search_form(); ?>
+			<div class="header-middle">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/slogan.png" alt="slogan" />
+			</div>
+			<div class="header-right">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/image-top-right.png" alt="slogan" />
 			</div>
 		</div>
+		<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+			<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+			<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+		</nav>
 	</header><!-- #masthead -->
-
+	<?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
+	<div class="support">
+		<ul>
+			<li class="first">
+				<span class="line-1">Tư vấn về nấm lim xanh</span><br>
+				<span class="line-2">Hãy liên hệ ngay với chúng tôi</span>
+			</li>
+			<li><a href="tel:+4.3797.0138">
+				<span class="line-1">Tổng đài tư vấn</span><br>
+				<span class="line-2">04.3797.0138</span>
+			</a></li>
+			<li><a href="tel:+936.476.588">
+				<span class="line-1">Dược sỹ dung</span><br>
+				<span class="line-2">0936.476.588</span>
+			</a></li>
+			<li><a href="tel:+919.257.838">
+				<span class="line-1">Dược sỹ hoa</span><br>
+				<span class="line-2">0919.257.838</span>
+			</a></li>
+			<li class="last"><a href="tel:+4.85878602">
+				<span class="line-1">Hỗ trợ hậu mãi</span><br>
+				<span class="line-2">04.85878602</span>
+			</a></li>
+		</ul>
+	</div>
 	<div id="main" class="site-main">
