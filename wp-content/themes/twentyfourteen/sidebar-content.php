@@ -33,5 +33,12 @@ $my_query_videos = new WP_Query( $args_videos );
 			?>
 		</div>
 	</div>
+	<div class="block block-image">
+		<h2><span>Chứng nhận giải thưởng<br/> nấm lim xanh</span></h2>
+		<div class="block-content">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/image-sidebar-right.png">
+			<img class="img-2" src="<?php echo get_template_directory_uri(); ?>/images/image1-sidebar-right.png">
+		</div>
+	</div>
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 </div><!-- #content-sidebar -->
