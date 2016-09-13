@@ -67,7 +67,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav>
 	</header><!-- #masthead -->
-	<?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
+	<?php echo do_shortcode('[wonderplugin_slider id=2]'); ?>
 	<div class="support">
 		<ul>
 			<li class="first">
@@ -92,4 +92,5 @@
 			</a></li>
 		</ul>
 	</div>
-	<div id="main" class="site-main">
+	<div class="main-container">
+		<div id="main" class="site-main">

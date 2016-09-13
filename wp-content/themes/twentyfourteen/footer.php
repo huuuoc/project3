@@ -11,6 +11,7 @@
 ?>
 
 			</div><!-- #main -->
+			</div><!-- .main-container -->
 			<div class="agency">
 				<div class="title-agency">
 					<h2><span>Đại lý nấm lim xanh</span></h2>
@@ -44,7 +45,7 @@
 				<p class="name-company">Công ty TNHH nấm lim xanh Việt Nam</p>
 				<p class="copyright">(VIETNAM GREEN IRONWOOD'S MUSHROOM CO.,LTD)</p>
 				<p>Giấy DKKD: 4005995598 ngày 26/10/2012 cấp tại Sở KH&DT Quảng Nam</p>
-				<p>Đại chỉ: Tổ 5 - Xã Tiến Hiệp - Huyện Tiên Phước - Tỉnh Quảng Nam</p>
+				<p>Đại chỉ: Tổ 5 - Xã Tiên Hiệp - Huyện Tiên Phước - Tỉnh Quảng Nam</p>
 				<p class="name-company title-slogan">TỔNG PHÂN PHỐI NẤM LIM XANH TỰ NHIÊN TIÊN PHƯỚC TRÊN TOÀN QUỐC</p>
 				<p class="copyright">Copyright &copy; - 2015 Công ty TNHH nấm lim xanh Việt Nam</p>
 				<!--<div class="site-info">
